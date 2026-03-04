@@ -1,16 +1,74 @@
-# mini_accounting_system
+# Mini Accounting System - نظام محاسبي مصغر 📊
 
-A new Flutter project.
+نظام محاسبي مبسط متكامل تم تطويره باستخدام إطار العمل **Flutter**، يهدف إلى مساعدة الأفراد وأصحاب المشاريع الصغيرة في إدارة شؤونهم المالية، تتبع الإيرادات والمصروفات، ومراقبة الميزانية من خلال واجهة مستخدم بديهية وتقارير دقيقة.
 
-## Getting Started
+## 🎯 الهدف من المشروع
 
-This project is a starting point for a Flutter application.
+توفير أداة رقمية سهلة الاستخدام لتوثيق العمليات المالية اليومية بدلاً من السجلات التقليدية، مع التركيز على تنظيم البيانات المالية في تصنيفات واضحة تسهل اتخاذ القرارات المالية الصحيحة.
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ المميزات الرئيسية (Core Features)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 1. إدارة العمليات المالية (Transaction Management)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* **تسجيل الإيرادات والمصروفات:** إضافة الحركات المالية مع تحديد القيمة، التاريخ، والبيان.
+* **التصنيف الذكي:** تقسيم العمليات إلى فئات (مثل: رواتب، إيجار، مبيعات، تسويق) لتسهيل التتبع.
+* **سجل العمليات:** عرض قائمة مفصلة بكافة الحركات المالية التاريخية مع إمكانية البحث والفلترة.
+
+### 2. الملخص المالي (Financial Summary)
+
+* **إجمالي الرصيد:** عرض حي وصافي للمبلغ المتبقي بناءً على مدخلات الإيرادات والمصروفات.
+* **مراقبة التدفق النقدي:** واجهة تعرض ملخصاً سريعاً للأرباح والخسائر خلال فترة زمنية محددة.
+
+### 3. واجهة المستخدم (UI/UX)
+
+* **لوحة تحكم (Dashboard):** عرض إحصائي سريع لأهم المؤشرات المالية فور فتح التطبيق.
+* **إدخال بيانات مرن:** نماذج (Forms) مخصصة لضمان دقة إدخال الأرقام وتفادي الأخطاء المحاسبية البسيطة.
+
+## 🛠 البنية التقنية (Technical Stack)
+
+* **Flutter & Dart:** لبناء تطبيق سريع ومتوافق مع مختلف أنظمة التشغيل.
+* **State Management:** إدارة تدفق البيانات المالية وتحديث الأرصدة والتقارير فورياً عند إضافة أي عملية.
+* **Local Data Storage:** تخزين البيانات المالية محلياً على الجهاز لضمان السرعة والخصوصية والعمل بدون إنترنت.
+* **Logic & Calculations:** نظام برمجي دقيق لمعالجة العمليات الحسابية وضمان توازن الأرقام.
+
+## 📂 هيكلية المشروع (Project Organization)
+
+```text
+lib/
+├── models/        # نماذج البيانات المحاسبية (Transaction, Category, Account)
+├── screens/       # شاشات الإدخال، سجل العمليات، والتقارير المالية
+├── controllers/   # معالجة العمليات الحسابية ومنطق تحديث الرصيد
+├── widgets/       # عناصر الواجهة المخصصة (Charts, Custom Inputs, Transaction Cards)
+└── utils/         # أدوات تنسيق العملات والتواريخ
+
+```
+
+## 🚀 كيفية التشغيل (Installation & Setup)
+
+1. **استنساخ المستودع:**
+```bash
+git clone https://github.com/salem-baqatyan/mini_accounting_system.git
+
+```
+
+
+2. **تحميل المكتبات:**
+```bash
+flutter pub get
+
+```
+
+
+3. **تشغيل التطبيق:**
+```bash
+flutter run
+
+```
+
+
+
+## 📝 المخطط المستقبلي (Roadmap)
+
+* دعم العملات المتعددة (Multi-currency support).
+* تصدير التقارير المالية بصيغة PDF أو Excel.
+* إضافة رسوم بيانية تفاعلية (Charts) لتمثيل المصروفات والإيرادات بصرياً.
